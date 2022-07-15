@@ -29,11 +29,13 @@
             android:id="@+id/txtUser"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/btnEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginBottom="12dp"
+                android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -46,6 +48,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/btnPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
