@@ -48,7 +48,7 @@ public class ActivityRegistro extends AppCompatActivity
         //DECLARACION BOTONES
         btnRegistrar= (Button) findViewById(R.id.btnRegistro);
 
-
+        RegistrarUsuario();
 
 
         //---------EVENTOS DE BOTONES
@@ -57,7 +57,7 @@ public class ActivityRegistro extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                RegistrarUsuario();
+
 
             }
         });
@@ -90,17 +90,19 @@ public class ActivityRegistro extends AppCompatActivity
             public void onResponse(JSONObject response) {
                 try {
                     Toast.makeText(getApplicationContext(), "String Response " + response.getString("mensaje").toString(), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),ActivityRegistro.class);
+                    Intent intent = new Intent(getApplicationContext(),ActivityLogin.class);
                     startActivity(intent);
                     finish();
-                } catch (JSONException e) {
+                } catch (JSONException e)
+                {
                     e.printStackTrace();
                 }
             }
         }, new Response.ErrorListener() {
             @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+            public void onErrorResponse(VolleyError error)
+            {
+
             }
         });
         requestQueue.add(jsonObjectRequest);
