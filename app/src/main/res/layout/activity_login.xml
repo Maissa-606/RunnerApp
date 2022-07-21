@@ -135,7 +135,7 @@
                     android:fontFamily="@font/oceanwidesemibold"
                     android:text=" Registrarse"
                     android:textAlignment="textStart"
-                    android:textColor="#1fc21a"
+                    android:textColor="#9306de"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -169,7 +169,7 @@
                     android:fontFamily="@font/ptsans_regular"
                     android:text=" Da click aquí para recuperarla"
                     android:textAlignment="textStart"
-                    android:textColor="#1fc21a"
+                    android:textColor="#9306de"
                     android:textSize="14dp" />
             </LinearLayout>
 

@@ -14,8 +14,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#8be27e"
+            android:background="#9306de"
             android:weightSum="10">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -25,11 +26,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="6"
-                android:textSize="24dp"
-                android:text="Actualizar Perfil"
+                android:fontFamily="@font/oceanwidesemibold"
                 android:gravity="center"
+                android:text="Actualizar Perfil"
                 android:textColor="@color/white"
-                android:fontFamily="@font/oceanwidesemibold"></TextView>
+                android:textSize="24dp"></TextView>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

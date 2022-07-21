@@ -149,7 +149,7 @@
                     android:layout_height="59dp"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="100dp"
-                    android:background="#8be27e"
+                    android:background="#9306de"
                     android:orientation="horizontal">
 
                     <TextView

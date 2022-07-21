@@ -19,7 +19,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#8be27e"
+                android:background="#9306de"
                 android:weightSum="10">
 
                 <TextView
@@ -37,11 +37,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="6"
-                    android:textSize="24dp"
-                    android:text="ESTADÍSTICAS"
+                    android:fontFamily="@font/oceanwidesemibold"
                     android:gravity="center"
+                    android:text="ESTADÍSTICAS"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/oceanwidesemibold"></TextView>
+                    android:textSize="24dp"></TextView>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -171,11 +172,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#9306de"
                         android:fontFamily="@font/oceanwidesemibold"
                         android:text="Histórico"
-                        android:background="#8be27e"
-                        android:textColor="@color/white"
                         android:textAlignment="center"
+                        android:textColor="@color/white"
                         android:textSize="20dp"></TextView>
 
                     <LinearLayout
