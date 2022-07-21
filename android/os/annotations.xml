@@ -1,0 +1,6 @@
+<root>
+    <item name='android.os.AsyncTask Result doInBackground(Params...)'>
+        <annotation name='androidx.annotation.Nullable' />
+        <annotation name='org.jetbrains.annotations.NonBlocking' />
+    </item>
+</root>

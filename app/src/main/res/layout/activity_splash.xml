@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="266dp"
+        android:layout_height="349dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="191dp"
+        app:srcCompat="@drawable/runner" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/abtnnext2"
+        android:layout_width="136dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="-6dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/rayo" />
+
+</RelativeLayout>

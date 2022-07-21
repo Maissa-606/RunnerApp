@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityEstadisticas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#8be27e"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textViewEstadisAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/oceanwidesemibold"
+                    android:gravity="center"
+                    android:text="Atrás |"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:textSize="24dp"
+                    android:text="ESTADÍSTICAS"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/oceanwidesemibold"></TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:layout_weight="3"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FAFAFA"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/oceanwidesemibold"
+                            android:text="Km Recorridos este Mes"
+                            android:textColor="@color/black"
+                            android:textSize="20dp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/TextViewRecorridoMes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="25dp"
+                            android:fontFamily="@font/oceanwidesemibold"
+                            android:text="300 km"
+                            android:textColor="@color/black"
+                            android:textSize="20dp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/run"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="175dp"
+                android:layout_weight="3"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FAFAFA"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="415dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/oceanwidesemibold"
+                            android:text="Calorías Mensuales (Kcal)"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextViewKcalMes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:fontFamily="@font/oceanwidesemibold"
+                            android:text="3000 Kcal"
+                            android:textColor="@color/black"
+                            android:textSize="20dp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/calorias"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="300dp"
+                android:layout_weight="3"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FAFAFA"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oceanwidesemibold"
+                        android:text="Histórico"
+                        android:background="#8be27e"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textSize="20dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/ptsans_bold"
+                                android:gravity="center"
+                                android:text="Semana Anterior"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/ptsans_bold"
+                                android:gravity="center"
+                                android:text="Semana Actual"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:background="@color/browser_actions_bg_grey">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ptsans_regular"
+                                    android:text="Km Recorridos: "
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"></TextView>
+
+                                <TextView
+                                    android:id="@+id/TextViewRecorridoSeAnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:layout_marginTop="25dp"
+                                    android:fontFamily="@font/oceanwidesemibold"
+                                    android:text="300km"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"></TextView>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ptsans_regular"
+                                    android:text="Km Recorridos: "
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"></TextView>
+
+                                <TextView
+                                    android:id="@+id/TextViewRecorridoSeActual"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:layout_marginTop="25dp"
+                                    android:fontFamily="@font/oceanwidesemibold"
+                                    android:text="200km"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    SEMANAS FINAL
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/ptsans_bold"
+                                android:gravity="center"
+                                android:text="Mes Anterior"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/ptsans_bold"
+                                android:gravity="center"
+                                android:text="Mes Actual"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:background="@color/browser_actions_bg_grey">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ptsans_regular"
+                                    android:text="Km Recorridos: "
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"></TextView>
+
+                                <TextView
+                                    android:id="@+id/TextViewRecorridoMesAnterio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:layout_marginTop="25dp"
+                                    android:fontFamily="@font/oceanwidesemibold"
+                                    android:text="300km"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"></TextView>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ptsans_regular"
+                                    android:text="Km Recorridos: "
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"></TextView>
+
+                                <TextView
+                                    android:id="@+id/TextViewRecorridoMesActual"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:layout_marginTop="25dp"
+                                    android:fontFamily="@font/oceanwidesemibold"
+                                    android:text="200km"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    MESES FINAL
+
+
+
+                </LinearLayout>
+                HISTORICO FINAL
+
+            </LinearLayout>
+            HISTORICO CONTENEDOR FINAL
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

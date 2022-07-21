@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitiAmigos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8be27e"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/amigosbtnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/oceanwidesemibold"
+            android:gravity="center"
+            android:text="Atrás |"
+            android:textColor="@color/white"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:textSize="24dp"
+            android:text="AMIGOS"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oceanwidesemibold"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"></LinearLayout>
+    </LinearLayout>
+    Barra Superior
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:id="@+id/actbtnAgregarAmigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/bordes_redondos">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oceanwidesemibold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:text="Agregar un nuevo amigo" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/agrega_usuario">
+
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mis amigos:"
+                android:textSize="20sp"
+                android:fontFamily="@font/oceanwidesemibold"
+                android:textColor="@color/black"/>
+
+            <ListView
+                android:id="@+id/listaMisAmigos"
+                android:layout_width="match_parent"
+                android:layout_height="682dp"
+                android:layout_marginTop="10dp">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
