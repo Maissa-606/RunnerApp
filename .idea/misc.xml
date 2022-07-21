@@ -3,10 +3,74 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Maissa/AndroidStudioProjects/Runner_App/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Maissa/AndroidStudioProjects/Runner_App/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Maissa/AndroidStudioProjects/Runner_App/app/src/main/res/layout/activity_perfil.xml" value="0.17910447251321387" />
-        <entry key="..\:/Users/Maissa/AndroidStudioProjects/Runner_App/app/src/main/res/layout/activity_registro.xml" value="0.15761193581162822" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunnerApp/app/src/main/res/layout/activity_anuncio2.xml" value="0.2028985507246377" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunnerApp/app/src/main/res/layout/activity_main2.xml" value="0.2028985507246377" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunnerApp/app/src/main/res/layout/activity_splash.xml" value="0.2028985507246377" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunnerApp/app/src/main/res/layout/activity_tablero.xml" value="0.2028985507246377" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_activiti_amigos.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_actualizar_perfil.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_anuncio1.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_anuncio2.xml" value="0.21875" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_clasificacion.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_main2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_registrar.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/layout/activity_tablero.xml" value="0.22826086956521738" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/Bibliotecas/Documentos/Clases UTH/2do Periodo 2022/Programacion Movil I/RunningHN/app/src/main/res/menu/menu_main.xml" value="0.25" />
+        <entry key="..\:/ProyectoMovilI/RunningHN/app/src/main/res/layout/activity_agregar_amigos.xml" value="0.27291666666666664" />
+        <entry key="..\:/ProyectoMovilI/RunningHN/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/ProyectoMovilI/RunningHN/app/src/main/res/layout/activity_registrar.xml" value="0.27291666666666664" />
+        <entry key="..\:/ProyectoMovilI/RunningHN/app/src/main/res/layout/amigo.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/caste/AndroidStudioProjects/RunningHN1.1/app/src/main/res/layout/activity_login.xml" value="0.1105072463768116" />
+        <entry key="..\:/Users/caste/AndroidStudioProjects/RunningHN1.1/app/src/main/res/layout/activity_recuperar.xml" value="0.1105072463768116" />
+        <entry key="..\:/Users/caste/AndroidStudioProjects/RunningHN1.1/app/src/main/res/layout/activity_registrar.xml" value="0.1105072463768116" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2985" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2985" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/drawable/stilofechas.xml" value="0.1935" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/drawable/stilos.xml" value="0.1965" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_activiti_amigos.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_actualizar_perfil.xml" value="0.3625" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_agregar_amigos.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_anuncio1.xml" value="0.3625" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_anuncio2.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_anuncio3.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_anuncio4.xml" value="0.12" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_clasificacion.xml" value="0.3625" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_estadisticas.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_main2.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_maps.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_maps_nueva_carrera.xml" value="0.25" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_perfil.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_principal.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_progreso_listado_actividades.xml" value="0.3500905797101449" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_recuperar.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_registrar.xml" value="0.3523550724637681" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_splash.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_tablero.xml" value="0.5" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/activity_usuario.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/adapterclasificacion.xml" value="0.22" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/adapterlistadoactividades.xml" value="0.3500905797101449" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/amigo.xml" value="0.3625" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/fragment__recorrido.xml" value="0.15932117527862208" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/fragment_dashboard.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/fragment_home.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/fragment_notifications.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/fragment_perfil.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/pickeraltura.xml" value="0.33" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/layout/pickerpeso.xml" value="0.3500905797101449" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/esteb/AndroidStudioProjects/RunningHN/app/src/main/res/menu/menu.xml" value="0.3625" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/drawable/gradiants.xml" value="0.124" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.124" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.124" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/layout/activity_anuncio2.xml" value="0.1" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/layout/activity_recuperar.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/layout/activity_splash.xml" value="0.1578125" />
+        <entry key="..\:/Users/sergio/AndroidStudioProjects/Luger24/RunningHN/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11302083333333333" />
       </map>
     </option>
   </component>
@@ -15,5 +79,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12" />
+      </ProjectState>
+    </option>
   </component>
 </project>
