@@ -46,7 +46,7 @@ public class ActivitiAmigos extends AppCompatActivity {
         }
     }
 
-    ///ya matenme
+    ///prueba
     private void hideSystemUI() {
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
