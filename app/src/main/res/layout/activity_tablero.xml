@@ -9,8 +9,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_colortablero"
+        android:background="@color/white"
         android:orientation="vertical">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -18,52 +19,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:background="@color/white"
-                    android:orientation="horizontal">
-                    los voa poner verdes los iconos menos el de leaderboard osea ranking
-                    letras de elementos del dashboard los cuadritos, en negro, arriba sus iconitos
-                    de
-                    colores forma dibujo y abajo un boton de animacion de colores verdes con brillos
-                    no neon
-                    que diga correr!
-
-                    <ImageView
-                        android:id="@+id/tabCerrarSesion"
-                        android:layout_width="wrap_content"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/admob_close_button_black_circle_white_cross" />
-
-                    <ImageView
-                        android:id="@+id/ranking"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/podium" />
-
-                    <ImageView
-                        android:id="@+id/perfil"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/user" />
-
-                    <ImageView
-                        android:id="@+id/tablerobtnAmigos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/peopleremovebgpreview" />
-
-                </LinearLayout>
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tablerbtnVerProgreso"
@@ -71,20 +27,20 @@
                     android:layout_height="150dp"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="200dp"
+                    android:layout_marginTop="167dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/bordes_redondos2" />
 
                 <TextView
                     android:id="@+id/texto1"
-                    android:layout_width="311dp"
-                    android:layout_height="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="300dp"
-                    android:layout_marginEnd="225dp"
+                    android:layout_marginStart="67dp"
+                    android:layout_marginTop="238dp"
+                    android:layout_marginEnd="208dp"
                     android:fontFamily="@font/ptsans_regular"
                     android:text="PROGRESO"
                     android:textAlignment="viewStart"
@@ -97,20 +53,20 @@
                     android:layout_height="150dp"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="400dp"
+                    android:layout_marginTop="344dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/bordes_redondos2" />
 
                 <TextView
                     android:id="@+id/texto2"
-                    android:layout_width="311dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="209dp"
+                    android:layout_height="47dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="500dp"
-                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="406dp"
+                    android:layout_marginEnd="165dp"
                     android:fontFamily="@font/ptsans_regular"
                     android:text="ESTADÍSTICAS"
                     android:textAlignment="viewStart"
@@ -123,9 +79,9 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="604dp"
-                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="542dp"
+                    android:layout_marginEnd="46dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -142,42 +98,56 @@
                         android:textColor="@color/white"
                         android:textSize="32dp" />
 
+                    <ImageView
+                        android:id="@+id/ranking"
+                        android:layout_width="83dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ranking" />
+
+                    <ImageView
+                        android:id="@+id/tablerobtnAmigos"
+                        android:layout_width="105dp"
+                        android:layout_height="79dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/grupousuarios" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
+                    android:layout_height="91dp"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="100dp"
-                    android:background="#9306de"
+                    android:layout_marginTop="38dp"
+                    android:background="@color/white"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="113dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/runnerapplogo" />
+
+                    <ImageView
+                        android:id="@+id/tabCerrarSesion"
+                        android:layout_width="17dp"
+                        android:layout_height="68dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:fontFamily="@font/oceanwidesemibold"
-                        android:text="RUNNING HN"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="40dp" />
-                </LinearLayout>
+                        app:srcCompat="@drawable/cerrar_sesion" />
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/brillos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="108dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="222dp"
-                    android:layout_marginTop="610dp"
-                    android:layout_marginEnd="45dp"
-                    app:lottie_autoPlay="true"
-                    app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/waves" />
+                    <ImageView
+                        android:id="@+id/perfil"
+                        android:layout_width="13dp"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/usuarioperfil" />
+
+                </LinearLayout>
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -187,7 +157,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="265dp"
-                    android:layout_marginTop="235dp"
+                    android:layout_marginTop="193dp"
                     android:layout_marginEnd="55dp"
                     app:srcCompat="@drawable/calendar" />
 
@@ -198,14 +168,13 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="265dp"
-                    android:layout_marginTop="435dp"
-                    android:layout_marginEnd="55dp"
+                    android:layout_marginStart="257dp"
+                    android:layout_marginTop="378dp"
+                    android:layout_marginEnd="63dp"
                     app:srcCompat="@drawable/reportedesalud" />
+
             </RelativeLayout>
         </ScrollView>
-
-
 
 
     </RelativeLayout>
