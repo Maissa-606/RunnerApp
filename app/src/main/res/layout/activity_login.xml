@@ -25,12 +25,12 @@
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="29dp"
                 android:layout_marginEnd="116dp"
-                app:srcCompat="@drawable/icontransparent" />
+                app:srcCompat="@drawable/runnerapplogo" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="339dp"
-                android:layout_height="wrap_content"
+                android:layout_height="wrap_content"/>/*
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
@@ -41,7 +41,7 @@
                 android:text="Running HN"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="50dp" />
+                android:textSize="50dp" />*/
 
             <EditText
                 android:id="@+id/altxtPass"
