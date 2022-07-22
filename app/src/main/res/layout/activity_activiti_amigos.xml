@@ -63,10 +63,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/oceanwidesemibold"
                 android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
                 android:padding="10dp"
-                android:text="Agregar un nuevo amigo" />
+                android:text="Agregar Amigo"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
             <ImageView
                 android:layout_width="28dp"
