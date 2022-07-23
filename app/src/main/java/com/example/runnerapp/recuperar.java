@@ -39,7 +39,7 @@ public class recuperar extends Activity {
     TextView enviar;
     String para, asunto, mensaje;
     String usuario=null, password=null, nombrecompleto=null;
-    private static final String URL_CONTRASENIA = "http://transportweb2.online/API/recuperar_clave.php";
+    private static final String URL_CONTRASENIA = "/API/recuperar_clave.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +52,12 @@ public class recuperar extends Activity {
 
 
         enviar.setOnClickListener((v) -> {
-            if(isEmailValid(destinatario.getText().toString())){ //preguntamos si es un mail valido
+            if(isEmailValid(destinatario.getText().toString())){
                 usuario = null;
 
                 obtener_datos_usuarios();
             }else {
-                destinatario.setError("Correo Invalido");//Avisamos que hay un error en la sintaxis
+                destinatario.setError("Correo Invalido");
 
             }
         });
@@ -146,12 +146,12 @@ public class recuperar extends Activity {
                 return new PasswordAuthentication("RunnighnHondu@gmail.com", "Hondras12.");
             }
         });
-        session.setDebug(true);//Esto es para depurar una vez funcione bien lo podemos quitar
+        session.setDebug(true);
 
         pdialog = ProgressDialog.show(this, "","Enviando correo", true);
 
 
-        enviar_correo task = new enviar_correo(); //llamamos a la clase enviar correo
+        enviar_correo task = new enviar_correo();
         task.execute();
 
 
