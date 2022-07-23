@@ -110,19 +110,7 @@
             android:name="com.example.runnerapp.ActivityRegistrar"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.ActivityAnuncio4"
-            android:exported="false" />
-        <activity
             android:name="com.example.runnerapp.ActivityLogin"
-            android:exported="true" />
-        <activity
-            android:name="com.example.runnerapp.ActivityAnuncio1"
-            android:exported="true" />
-        <activity
-            android:name="com.example.runnerapp.ActivityAnuncio2"
-            android:exported="true" />
-        <activity
-            android:name="com.example.runnerapp.ActivityAnuncio3"
             android:exported="true" />
         <activity
             android:name="com.example.runnerapp.SplashScreen"
