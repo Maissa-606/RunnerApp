@@ -41,7 +41,6 @@ public class recuperar extends Activity {
     String usuario=null, password=null, nombrecompleto=null;
     private static final String URL_CONTRASENIA = "http://transportweb2.online/API/recuperar_clave.php";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
