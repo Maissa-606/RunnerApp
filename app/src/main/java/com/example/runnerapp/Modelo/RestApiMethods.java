@@ -1,7 +1,7 @@
 package com.example.runnerapp.Modelo;
 
 public class RestApiMethods {
-    private static final String ipaddress = "192.168.0.24";
+    private static final String ipaddress = "192.168.0.8";
     public static final String StringHttp = "http://";
     //EndPoint Urls
     private static final String GetAmigosAgregados = "/API/listaamigos.php";

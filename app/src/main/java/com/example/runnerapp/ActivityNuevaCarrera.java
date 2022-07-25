@@ -299,6 +299,7 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
         outState.putBoolean("running", wasRunning);
 
     }
+
     private void iniciarTiempo() {
         TextView timeview = findViewById(R.id.cronometro);
 

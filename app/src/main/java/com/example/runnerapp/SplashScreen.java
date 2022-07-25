@@ -25,11 +25,10 @@ public class SplashScreen extends AppCompatActivity {
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         decorView.setSystemUiVisibility(uiOptions);
-       // permisos();
+        permisos();
 
 }
 
-/*
     private void entrarAnuncios() {
         mSharedPrefs = getSharedPreferences("anuncios", Context.MODE_PRIVATE);
         String olvidar = mSharedPrefs.getString("olvidar","");
@@ -73,5 +72,5 @@ public class SplashScreen extends AppCompatActivity {
         }else{
             Toast.makeText(getApplicationContext(),"Se necesitan permisos",Toast.LENGTH_LONG).show();
         }
-    }*/
+    }
 }

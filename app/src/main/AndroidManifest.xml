@@ -49,13 +49,25 @@
         android:theme="@style/Theme.RunningHN"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.runnerapp.ActivityClasificacion"
+            android:name=".ActivityAnuncio3"
             android:exported="false" />
         <activity
-            android:name="com.example.runnerapp.Progreso_ListadoActividades"
-            android:exported="true"></activity>
+            android:name=".ActivityAnuncio4"
+            android:exported="false" />
         <activity
-            android:name="com.example.runnerapp.ActivitiAmigos"
+            android:name=".ActivityAnuncio2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAnuncio1"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityClasificacion"
+            android:exported="false" />
+        <activity
+            android:name=".Progreso_ListadoActividades"
+            android:exported="true" />
+        <activity
+            android:name=".ActivitiAmigos"
             android:exported="true" />
         <!--
              You can find your app ID in the AdMob UI. For android:value,
@@ -71,10 +83,10 @@
             android:exported="false"
             android:theme="@android:style/Theme.Translucent" />
         <activity
-            android:name="com.example.runnerapp.Activity_Perfil"
+            android:name=".Activity_Perfil"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.ActivityAgregarAmigos"
+            android:name=".ActivityAgregarAmigos"
             android:exported="true" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -92,54 +104,43 @@
             android:value="AIzaSyCaCgj84fV1j4uLD7kefOg63yNz-QZiaT0" />
 
         <activity
-            android:name="com.example.runnerapp.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-
         </activity>
         <activity
-            android:name="com.example.runnerapp.recuperar"
+            android:name=".recuperar"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.ActivityRegistrar"
+            android:name=".ActivityRegistrar"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.ActivityLogin"
+            android:name=".ActivityLogin"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.SplashScreen"
+            android:name=".SplashScreen"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
-            android:name="com.example.runnerapp.MapsActivity"
-            android:exported="true" />
-
-
-        <activity
-            android:name="com.example.runnerapp.ActivityNuevaCarrera"
+            android:name=".MapsActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.Activity_Actualizar_Perfil"
+            android:name=".ActivityNuevaCarrera"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.ActivityTablero"
+            android:name=".Activity_Actualizar_Perfil"
             android:exported="true" />
         <activity
-            android:name="com.example.runnerapp.ActivityEstadisticas"
+            android:name=".ActivityTablero"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityEstadisticas"
             android:exported="false" />
     </application>
 
