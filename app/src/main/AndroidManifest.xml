@@ -49,10 +49,10 @@
         android:theme="@style/Theme.RunningHN"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ActivityAnuncio3"
+            android:name=".ActivityAnuncio4"
             android:exported="false" />
         <activity
-            android:name=".ActivityAnuncio4"
+            android:name=".ActivityAnuncio3"
             android:exported="false" />
         <activity
             android:name=".ActivityAnuncio2"
@@ -106,9 +106,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_main">
-
-        </activity>
+            android:label="@string/title_activity_main"></activity>
         <activity
             android:name=".recuperar"
             android:exported="true" />
