@@ -179,7 +179,6 @@ String email;
     }
 
 
-
     public void mostrarFoto(String foto) {
         try {
             String base64String = "data:image/png;base64,"+foto;

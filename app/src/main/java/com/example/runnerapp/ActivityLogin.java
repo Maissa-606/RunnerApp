@@ -110,7 +110,6 @@ public class ActivityLogin extends AppCompatActivity {
         }
 
 
-
     }
 
     private void loginUsuario(String correo, String clave) {

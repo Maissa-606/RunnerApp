@@ -86,13 +86,7 @@ public class Usuario
         this.apellidos = apellidos;
     }
 
-   /* public int getTelefono() {
-        return telefono;
-    }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }*/
 
     public String getCorreo() {
         return correo;

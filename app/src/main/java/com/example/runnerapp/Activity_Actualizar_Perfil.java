@@ -66,14 +66,10 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
-    //
-
-
 
     EditText txtNombre,txtApellido,txtTelefono;
     TextView peso, altura,txtFechaNac;
     Spinner SpiPais;
-    //Button btnActualizar,btnTomarFoto,btnSelectGaleria,btnAtras;
     TextView btnActualizar;
     LinearLayout btnTomarFoto,btnSelectGaleria;
     ImageView Foto;
@@ -143,10 +139,7 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
 
 
 
-
         //---------------------Fin de codigo de la fecha-------------------------------------------
-        //-----------------------------------------------------------------------------------------
-
 
         txtNombre = (EditText) findViewById(R.id.actutxtnombre);
         txtApellido =  (EditText) findViewById(R.id.actutxtapellidos);
@@ -154,15 +147,11 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
         txtTelefono =(EditText) findViewById(R.id.actxtTelefono);
         SpiPais =  (Spinner)  findViewById(R.id.actucmbPais);
 
-//        btnActualizar = (Button) findViewById(R.id.actbtnActualizar);
-//        btnTomarFoto = (Button) findViewById(R.id.actuTomarFoto);
-//        btnSelectGaleria = (Button) findViewById(R.id.actugaleria);
 
         btnActualizar = findViewById(R.id.actbtnActualizar);
         btnTomarFoto = findViewById(R.id.actuTomarFoto);
         btnSelectGaleria = findViewById(R.id.actugaleria);
 
-        //btnAtras = findViewById(R.id.perbtnAtras);
         Foto =(ImageView) findViewById(R.id.actuImgView);
 
         email = getIntent().getStringExtra("email");
@@ -189,10 +178,8 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
         SpiPais.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                //setComboboxSeleccionado();//obtengo el usuario seleccionado de la lista
                 String cadena = adapterView.getSelectedItem().toString();
 
-                //Quitar los caracteres del combobox para obtener solo el codigo del pais
                 codigoPaisSeleccionado = Integer.valueOf(extraerNumeros(cadena).toString().replace("]","").replace("[",""));
             }
 
@@ -225,19 +212,7 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
             }
         });
 
-//        btnAtras.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                finish();
-//            }
-//        });
-
-
-
     }
-
-
-
 
 
     public void mostrarFoto(String foto) {
@@ -258,8 +233,7 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
 
         Uri imageUri;
         //obtener la iamgen por el almacenamiento interno
-        if(resultCode==RESULT_OK && requestCode==RESULT_GALLERY_IMG)
-        {
+        if(resultCode==RESULT_OK && requestCode==RESULT_GALLERY_IMG) {
 
             imageUri = data.getData();
             Foto.setImageURI(imageUri);
@@ -304,7 +278,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
         parametros.put("codigo_pais", codigoPaisSeleccionado+"");
         parametros.put("foto", fotoString2);
 
-        //Toast.makeText(getApplicationContext(), "String Response2 " + correo, Toast.LENGTH_SHORT).show();
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, RestApiMethods.EndPointSetUpdateUser,
                 new JSONObject(parametros), new Response.Listener<JSONObject>() {
@@ -333,8 +306,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),Activity_Perfil.class);
         startActivity(intent);
     }
-
-    //-------------------------------------------------------------------------------------------------------------------
 
 
     private String GetStringImage(Bitmap photo) {
@@ -374,8 +345,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
 
     //**Entrar a la carpeta de fotos del telefono**//
     private void GaleriaImagenes() {
-        /*Intent photoPickerIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(photoPickerIntent, RESULT_GALLERY_IMG);*/
 
         Intent intent = new Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/");
@@ -404,7 +373,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
                             JSONArray contactoArray = jsonObject.getJSONArray( "pais");
 
                             arrayPaises = new ArrayList<>();
-//                            arrayPaises.clear();//limpiar la lista de usuario antes de comenzar a listar
                             for (int i=0; i<contactoArray.length(); i++)
                             {
                                 JSONObject RowPais = contactoArray.getJSONObject(i);
