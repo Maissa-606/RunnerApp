@@ -46,6 +46,7 @@ public class ActivitiAmigos extends AppCompatActivity {
         }
     }
 
+    ///ya matenme
     private void hideSystemUI() {
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
@@ -97,7 +98,6 @@ public class ActivitiAmigos extends AppCompatActivity {
         });
 
     }
-    //consulta en la base de datos el pais del correo que se logueo, luego manda a llamar el listado de personas de ese pais
     private void listarUsuarios(String codUser) {
         RequestQueue queue = Volley.newRequestQueue(this);
         HashMap<String, String> parametros = new HashMap<>();
@@ -129,6 +129,7 @@ public class ActivitiAmigos extends AppCompatActivity {
                 }
             }
 
+
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -159,6 +160,7 @@ public class ActivitiAmigos extends AppCompatActivity {
             txtnombreCompleto = item.findViewById(R.id.txtNombreAmigo);
             String nombrecompleto= listaUsuarios.get(position).getNombres()+" "+listaUsuarios.get(position).getApellidos();
             txtnombreCompleto.setText(nombrecompleto);
+
 
             ImageView cBox = item.findViewById(R.id.checkBox);
             cBox.setOnClickListener(new View.OnClickListener(){
