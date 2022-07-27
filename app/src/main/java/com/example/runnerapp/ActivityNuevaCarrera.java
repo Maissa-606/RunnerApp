@@ -86,7 +86,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario);
-        //-----tiempo
         if(savedInstanceState != null){
             savedInstanceState.getInt("segundos");
             savedInstanceState.getInt("running1");
@@ -94,7 +93,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
 
 
         }
-        //-----------------------
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,}, 1000);
@@ -106,20 +104,11 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
         iniciarTiempo();
 
         btnComenzar = (Button) findViewById(R.id.btnComenzar);
-        //TextView btnComenzar = findViewById(R.id.btnComenzar);
-        //btnDetener = (Button) findViewById(R.id.btnDetener);
-
         txtLat = (EditText) findViewById(R.id.txtLat);
         txtLon = (EditText) findViewById(R.id.txtLon);
         txtTiempo = (EditText) findViewById(R.id.nctiempo);
 
 
-//        btnDetener.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
         btnComenzar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

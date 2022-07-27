@@ -103,7 +103,7 @@ public class ActivityAgregarAmigos extends AppCompatActivity {
             }
         });
     }
-//consulta en la base de datos el pais del correo que se logueo, luego manda a llamar el listado de personas de ese pais
+
     private void listarUsuarios(String email) {
         RequestQueue queue = Volley.newRequestQueue(this);
         HashMap<String, String> parametros = new HashMap<>();
@@ -143,8 +143,7 @@ public class ActivityAgregarAmigos extends AppCompatActivity {
 
         queue.add(jsonObjectRequest);
     }
-//--agrega como amigo segun el codigo de usuario del listado.
-    private void agregarAmigo(int codigoUsuario, int codigoAmigo) {
+  private void agregarAmigo(int codigoUsuario, int codigoAmigo) {
         RequestQueue queue = Volley.newRequestQueue(this);
         HashMap<String, Integer> parametros = new HashMap<>();
         parametros.put("codigo_usuario", codigoUsuario);

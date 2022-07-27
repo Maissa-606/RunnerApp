@@ -54,12 +54,12 @@ public class Activity_Perfil extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
-EditText txtnombre,txtpais,txtpeso,txtaltu, txtfechaNacimiento, txtcorreo, txttelefono;
-TextView btnEditar,btnAtras;   //OJOOOOOOOOOOOOOOO SE LOS CAMBIE A TEXTVIEW
-ImageView perfilfoto;
-Usuario usuario;
-ArrayList<String> arrayUsuario;
-String email;
+        EditText txtnombre,txtpais,txtpeso,txtaltu, txtfechaNacimiento, txtcorreo, txttelefono;
+        TextView btnEditar,btnAtras;
+        ImageView perfilfoto;
+        Usuario usuario;
+        ArrayList<String> arrayUsuario;
+        String email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

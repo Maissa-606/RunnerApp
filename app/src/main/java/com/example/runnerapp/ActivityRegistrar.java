@@ -74,21 +74,20 @@ import javax.mail.internet.MimeMessage;
 
 public class ActivityRegistrar extends AppCompatActivity {
 
-    //Datos para fecha
+
     private static final String TAG = "MainActivity";
     private TextView mDisplayDate, fechaNac;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
-    //
 
 
-    Session session = null; //Inicio de session para autenticar usuario y password
-    ProgressDialog pdialog = null; //dialogo del proceso
-    String para, asunto, mensaje;//Para datos del mensaje
+
+    Session session = null;
+    ProgressDialog pdialog = null;
+    String para, asunto, mensaje;
 
     EditText nombres, apellidos, telefono, correo, contrasenia1, contrasenia2 ;
     TextView peso, altura,txtMostrarContra;
     Spinner cmbpais;
-    //Button btnguardar,btnTomaFoto,btnGaleria,btnMostrarContra;
     TextView btnguardar, btnatras;
     LinearLayout btnTomaFoto,btnGaleria;
     ImageView btnMostrarContra;
@@ -537,37 +536,30 @@ public class ActivityRegistrar extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
-    //hola mundo adios xD
-    //--------------------------VALIDAR CORREO-----
+
     public void configurar_envio(){
-        //Almacenamos los datos obtenido en sus respectivas variables para el envio del correo
+
         para = correo.getText().toString();
         asunto = "Verificación de correo - RUNNING HN";
         mensaje = "Hola "+nombres.getText().toString()+" "+apellidos.getText().toString()+", \n"+"Su codigo de verificacion es: "+codigo;
 
-        //creamos las propiedades
+
         Properties properties = new Properties ();
 
-        //configurando propiedades para email
-        //si vamos a utilizar otro servidor tnemos que cambiar los valores
-        properties.put("mail.smtp.host", "smtp.gmail.com");//host
-        properties.put("mail.smtp.starttls.enable", "true");//Habilitar starttlls de smtp de correo
+
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.port", "25");//puerto
-        properties.put("mail.smtp.user", "RunnighnHondu@gmail.com");//correo de emisor
-        properties.put("mail.smtp.auth", "true");//Autorizacion de envio
+        properties.put("mail.smtp.user", "RunnighnHondu@gmail.com");
+        properties.put("mail.smtp.auth", "true");
 
-        //STARTTLS es una extencion a los protocolos de comunicacion de texto plano,
-        //que ofrese una forma de mejorar desde una conexion de exto plano a una conexion cifrada,
-        //(TLS O SSL) en lugar de utilizar un puerto diferente para la comunicacion cifrada.
-
-        //Creamos la nueva sesion
         session = Session.getDefaultInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication("RunnighnHondu@gmail.com", "Hondras12.");
             }
         });
-        session.setDebug(true);//Esto es para depurar una vez funcione bien lo podemos quitar
+        session.setDebug(true);
 
         pdialog = ProgressDialog.show(this, "","Enviando correo", true);
 

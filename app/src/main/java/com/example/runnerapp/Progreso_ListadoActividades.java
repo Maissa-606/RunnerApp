@@ -73,7 +73,6 @@ public class Progreso_ListadoActividades extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = appCompatActivity.getLayoutInflater();
             View item = inflater.inflate(R.layout.adapterlistadoactividades, null);
-            //Button btnverRecorrido = item.findViewById(R.id.adapbtnverRecorrido);
             LinearLayout btnverRecorrido = item.findViewById(R.id.adapbtnverRecorrido);
             TextView fecha = item.findViewById(R.id.adaplblfecha);
             TextView kilometros = item.findViewById(R.id.adaplblkm);
@@ -105,7 +104,7 @@ public class Progreso_ListadoActividades extends AppCompatActivity {
         }
     }
 
-    //-----traer el listado de las actividades
+
     private void listadoActividad(String codigo_usuario) {
         RequestQueue queue = Volley.newRequestQueue(this);
         HashMap<String, String> parametros = new HashMap<>();
