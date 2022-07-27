@@ -16,6 +16,7 @@ import android.animation.Animator;
 
         import com.airbnb.lottie.LottieAnimationView;
         import com.example.runnerapp.Modelo.RestApiMethods;
+import com.example.runnerapp.databinding.ActivitySplashBinding;
 
 public class ActivityAnuncio4 extends AppCompatActivity {
     @Override
@@ -104,11 +105,11 @@ public class ActivityAnuncio4 extends AppCompatActivity {
         });
     }
 
-    public void openActivity3() {
+  /*  public void openActivity3() {
         Intent intent = new Intent(this, ActivityAnuncio3.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-    }
+    }*/
 
     public void openActivityLogin(){
         Intent intent = new Intent(this, ActivityLogin.class);
@@ -121,12 +122,18 @@ public class ActivityAnuncio4 extends AppCompatActivity {
         return super.onTouchEvent(event);
     }
 
+    public void openSplash() {
+        Intent intent = new Intent(this, ActivitySplashBinding.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
 
     class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityx, float velocityY) {
             if(e1.getX()<e2.getX()){
-                openActivity3();
+                openSplash();
             }
             return true;
         }

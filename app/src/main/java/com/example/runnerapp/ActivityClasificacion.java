@@ -123,8 +123,6 @@ public class ActivityClasificacion extends AppCompatActivity {
 
             top.setText(listaClasificacion.get(position).getTop());
             nombrecompleto.setText(listaClasificacion.get(position).getNombrecompleto());
-            //kilometro.setText(listaClasificacion.get(position).getKm());
-            //kcal.setText(listaClasificacion.get(position).getKcal());
             mostrarFoto(listaClasificacion.get(position).getFoto(),foto);
 
             return (item);

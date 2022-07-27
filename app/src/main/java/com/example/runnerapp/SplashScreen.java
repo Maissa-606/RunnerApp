@@ -41,7 +41,7 @@ public class SplashScreen extends AppCompatActivity {
                     startActivity(new Intent(SplashScreen.this, ActivityLogin.class));
                     finish();
                 }else {
-                    startActivity(new Intent(SplashScreen.this, ActivityAnuncio1.class));
+                    startActivity(new Intent(SplashScreen.this, ActivityAnuncio4.class));
                     finish();
                 }
             }
@@ -50,9 +50,12 @@ public class SplashScreen extends AppCompatActivity {
 
     private void permisos() {
 
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
         {
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},LOCATION_GPS_REQUEST);
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    LOCATION_GPS_REQUEST);
         }else{
             entrarAnuncios();
         }
