@@ -22,9 +22,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="29dp"
-                android:layout_marginEnd="116dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="65dp"
                 app:srcCompat="@drawable/logoapp" />
 
             <TextView

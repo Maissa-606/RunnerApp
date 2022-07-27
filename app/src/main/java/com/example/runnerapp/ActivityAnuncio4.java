@@ -9,13 +9,10 @@ import android.animation.Animator;
         import android.view.GestureDetector;
         import android.view.MotionEvent;
         import android.view.View;
-        import android.widget.Toast;
-
         import androidx.appcompat.app.AppCompatActivity;
         import androidx.core.view.GestureDetectorCompat;
-
         import com.airbnb.lottie.LottieAnimationView;
-        import com.example.runnerapp.Modelo.RestApiMethods;
+
 import com.example.runnerapp.databinding.ActivitySplashBinding;
 
 public class ActivityAnuncio4 extends AppCompatActivity {
@@ -104,12 +101,6 @@ public class ActivityAnuncio4 extends AppCompatActivity {
             }
         });
     }
-
-  /*  public void openActivity3() {
-        Intent intent = new Intent(this, ActivityAnuncio3.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-    }*/
 
     public void openActivityLogin(){
         Intent intent = new Intent(this, ActivityLogin.class);

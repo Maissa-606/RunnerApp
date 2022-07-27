@@ -14,14 +14,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-            <ImageView
-                android:id="@+id/imageView"
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ima"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="57dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/parque"></ImageView>
+                android:layout_height="470dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/runner" />
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/cronometro"
@@ -30,12 +32,12 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="232dp"
-                android:layout_marginTop="71dp"
-                android:layout_marginEnd="21dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="473dp"
+                android:layout_marginEnd="5dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/cronometro" />
+                app:lottie_rawRes="@raw/reloj" />
 
             <TextView
                 android:id="@+id/text"
@@ -46,7 +48,7 @@
                 android:layout_marginTop="425dp"
                 android:layout_marginRight="20dp"
                 android:fontFamily="@font/ptsans_regular"
-                android:text="@string/anuncio4"
+                android:text="¡Comienza tu reto del día!      Runner APP te acompaña."
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
@@ -73,7 +75,7 @@
                 android:layout_marginEnd="35dp"
                 android:orientation="horizontal">
 
-                <ImageView
+               <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="50dp"
                     android:layout_height="75dp"
@@ -102,7 +104,7 @@
                 android:layout_marginTop="570dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/waves" />
+                app:lottie_rawRes="@raw/confeti" />
         </RelativeLayout>
     </ScrollView>
 

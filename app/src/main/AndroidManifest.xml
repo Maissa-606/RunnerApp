@@ -50,16 +50,9 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".ActivityAnuncio4"
-            android:exported="true" />
-        <activity
-            android:name=".ActivityAnuncio3"
-            android:exported="true" />
-        <activity
-            android:name=".ActivityAnuncio2"
-            android:exported="true" />
-        <activity
-            android:name=".ActivityAnuncio1"
-            android:exported="true" />
+            android:exported="true"/>
+
+
 
         <activity
             android:name=".ActivityClasificacion"
@@ -125,7 +118,8 @@
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-        </activity>
+    </activity>
+
 
         <activity
             android:name=".MapsActivity"
