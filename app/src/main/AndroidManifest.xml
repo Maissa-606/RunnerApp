@@ -50,16 +50,17 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".ActivityAnuncio4"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ActivityAnuncio3"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ActivityAnuncio2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ActivityAnuncio1"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".ActivityClasificacion"
             android:exported="false" />
@@ -84,10 +85,10 @@
             android:theme="@android:style/Theme.Translucent" />
         <activity
             android:name=".Activity_Perfil"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ActivityAgregarAmigos"
-            android:exported="true" />
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -106,7 +107,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
         <activity
             android:name=".recuperar"
             android:exported="true" />
@@ -119,12 +120,13 @@
         <activity
             android:name=".SplashScreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
         <activity
             android:name=".MapsActivity"
             android:exported="true" />
