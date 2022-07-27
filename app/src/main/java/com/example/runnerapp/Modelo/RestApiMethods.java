@@ -1,7 +1,7 @@
 package com.example.runnerapp.Modelo;
 
 public class RestApiMethods {
-    private static final String ipaddress = "192.168.0.24";
+    private static final String ipaddress = "juancarlossanchez.000webhostapp.com/";
     public static final String StringHttp = "http://";
     //EndPoint Urls
     private static final String GetAmigosAgregados = "/API/listaamigos.php";
@@ -46,7 +46,7 @@ public class RestApiMethods {
     public static  String correo = "";
     public static  String codigo_usuario = "";
 
-    String prueba = "http://transportweb2.online/API/listasingleusuariopais.php";
+    String prueba = "http://juancarlossanchez.000webhostapp.com/API/listasingleusuariopais.php";
 }
 
 
