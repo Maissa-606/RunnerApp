@@ -126,10 +126,6 @@ public class ActivityRegistrar extends AppCompatActivity {
         peso = (TextView) findViewById(R.id.rtxtPeso);
         altura = (TextView) findViewById(R.id.rtxtAltura);
         cmbpais = (Spinner) findViewById(R.id.rcmbPais);
-//        btnguardar = (Button) findViewById(R.id.rbtnGuardar);
-//        btnTomaFoto = (Button) findViewById(R.id.rbtnTomarFoto);
-//        btnGaleria = (Button) findViewById(R.id.rbtngaleria);
-//        btnMostrarContra = (Button) findViewById(R.id.arbtnMostrarContra);
         btnguardar = findViewById(R.id.rbtnGuardar);
         btnTomaFoto = findViewById(R.id.rbtnTomarFoto);
         btnGaleria = findViewById(R.id.rbtngaleria);
@@ -295,8 +291,6 @@ public class ActivityRegistrar extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Debe de seleccionar su altura", Toast.LENGTH_LONG).show();
         }else{
             validarContrasenia();
-            //configurar_envio();
-            //RegistrarUsuario();
         }
     }
 
@@ -412,16 +406,12 @@ public class ActivityRegistrar extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     int task = Integer.valueOf(taskEditText.getText().toString());
                                     if (codigo == task) {
-                                        //validarDatos();
                                         RegistrarUsuario();
                                         Toast.makeText(getApplicationContext(), "codigo valido", Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getApplicationContext(), "codigo invalido", Toast.LENGTH_SHORT).show();
                                     }
 
-                                    //validarContrasenia();
-                                    //RegistrarUsuario();
-                                    //
 
                                 }
                             }
