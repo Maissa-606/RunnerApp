@@ -22,14 +22,14 @@
 
     <ImageView
         android:id="@+id/logorun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_width="177dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/runninghnlogo" />
+        android:src="@drawable/runnerapplogo" />
 
     <EditText
         android:id="@+id/txtrecuperar"
