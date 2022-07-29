@@ -493,7 +493,7 @@ public class ActivityRegistrar extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    Toast.makeText(getApplicationContext(), "String Response " + response.getString("mensaje").toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), " " + response.getString("mensaje").toString(), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(),ActivityLogin.class);
                     startActivity(intent);
                     finish();
