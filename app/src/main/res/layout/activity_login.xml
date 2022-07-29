@@ -165,16 +165,16 @@
 
             <CheckBox
                 android:id="@+id/alckRecordar"
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_width="209dp"
+                android:layout_height="34dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="52dp"
-                android:layout_marginTop="498dp"
-                android:layout_marginEnd="200dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="497dp"
+                android:layout_marginEnd="105dp"
                 android:fontFamily="@font/oceanwidesemibold"
-                android:text="Recordar mis datos"
+                android:text="Recordar mis credenciales"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14dp" />
