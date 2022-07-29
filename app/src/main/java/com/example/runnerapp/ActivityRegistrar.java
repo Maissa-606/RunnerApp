@@ -394,9 +394,10 @@ public class ActivityRegistrar extends AppCompatActivity {
     private String validarContrasenia() {
         if (contrasenia1.getText().toString().equals(contrasenia2.getText().toString())){
             contrasenia = contrasenia1.getText().toString();
-            configurar_envio();
+            //configurar_envio();
             final EditText taskEditText = new EditText(context);
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+            RegistrarUsuario();
+            /*AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
             alertDialogBuilder.setTitle("Verifique su correo");
             alertDialogBuilder
                     .setMessage("hemos enviado un correo con su codigo de verificación")
@@ -406,7 +407,7 @@ public class ActivityRegistrar extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     int task = Integer.valueOf(taskEditText.getText().toString());
                                     if (codigo == task) {
-                                        RegistrarUsuario();
+
                                         Toast.makeText(getApplicationContext(), "codigo valido", Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getApplicationContext(), "codigo invalido", Toast.LENGTH_SHORT).show();
@@ -416,11 +417,11 @@ public class ActivityRegistrar extends AppCompatActivity {
                                 }
                             }
 
-                    );
+                    );*/
 
             // create alert dialog
-            AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
+            //AlertDialog alertDialog = alertDialogBuilder.create();
+            //alertDialog.show();
 
         }
         else {
