@@ -45,19 +45,15 @@ public class ActivityAnuncio4 extends AppCompatActivity {
         setContentView(R.layout.activity_anuncio4);
         mDetector = new GestureDetectorCompat(this, new MyGestureListener());
 
-
-        //ocultar menu
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         decorView.setSystemUiVisibility(uiOptions);
 
-        // Lottie Animation
         LottieAnimationView animationViewRemote = findViewById(R.id.abtnnextlogin);
         animationViewRemote.setAnimation(R.raw.boton);
         animationViewRemote.loop(false);
         animationViewRemote.playAnimation();
 
-        // handler
         Handler handler = new Handler();
 
         animationViewRemote.addAnimatorListener(new Animator.AnimatorListener() {
@@ -74,7 +70,6 @@ public class ActivityAnuncio4 extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animator animator) {
-                //que no siga el loop animationViewRemote.playAnimation();
             }
 
             @Override

@@ -46,7 +46,7 @@ public class ActivitiAmigos extends AppCompatActivity {
         }
     }
 
-    ///ya matenme
+
     private void hideSystemUI() {
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
@@ -112,7 +112,7 @@ public class ActivitiAmigos extends AppCompatActivity {
 
                     JSONArray usuarioArray = response.getJSONArray("amigo");
 
-                    listaUsuarios.clear();//limpiar la lista de usuario antes de comenzar a listar
+                    listaUsuarios.clear();
                     for (int i = 0; i < usuarioArray.length(); i++) {
                         JSONObject RowUsuario = usuarioArray.getJSONObject(i);
                         usuario = new Usuario(RowUsuario.getInt("codigo_usuario"),

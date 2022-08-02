@@ -173,7 +173,6 @@ public class recuperar extends Activity {
                 t.connect("RunnighnHondu@gmail.com","Hondras12.");
                 t.sendMessage(message, message.getAllRecipients());
 
-                //cierre
                 t.close();
 
 

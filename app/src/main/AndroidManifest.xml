@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.runnerapp">
-    <!-- Include required permissions for Google Mobile Ads to run. -->
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -22,19 +22,19 @@
 
     <queries>
 
-        <!-- Browser -->
+
         <intent>
             <action android:name="android.intent.action.VIEW" />
 
             <data android:scheme="http" />
         </intent>
 
-        <!-- Camera -->
+
         <intent>
             <action android:name="android.media.action.IMAGE_CAPTURE" />
         </intent>
 
-        <!-- Gallery -->
+
         <intent>
             <action android:name="android.intent.action.GET_CONTENT" />
         </intent>
@@ -53,7 +53,6 @@
             android:exported="true"/>
 
 
-
         <activity
             android:name=".ActivityClasificacion"
             android:exported="false" />
@@ -63,11 +62,7 @@
         <activity
             android:name=".ActivitiAmigos"
             android:exported="true" />
-        <!--
-             You can find your app ID in the AdMob UI. For android:value,
-            insert your own AdMob app ID in quotes, as shown below.
-            Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713
-        -->
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- Include the AdActivity configChanges and theme. -->
@@ -82,17 +77,7 @@
         <activity
             android:name=".ActivityAgregarAmigos"
             android:exported="false" />
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
 
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCaCgj84fV1j4uLD7kefOg63yNz-QZiaT0" />

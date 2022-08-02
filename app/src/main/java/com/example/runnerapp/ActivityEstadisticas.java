@@ -84,7 +84,6 @@ public class ActivityEstadisticas extends AppCompatActivity {
                 try {
                     JSONArray usuarioArray = response.getJSONArray("datos");
 
-                    //listaActividades.clear();//limpiar la lista de usuario antes de comenzar a listar
                     for (int i = 0; i < usuarioArray.length(); i++) {
                         JSONObject Row = usuarioArray.getJSONObject(i);
                         recorridoMes.setText(Row.getString("skmmesact"));
@@ -110,11 +109,4 @@ public class ActivityEstadisticas extends AppCompatActivity {
 
         queue.add(jsonObjectRequest);
     }
-
-
-
-
 }
-
-
-

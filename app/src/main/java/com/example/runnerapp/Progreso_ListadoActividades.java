@@ -54,8 +54,6 @@ public class Progreso_ListadoActividades extends AppCompatActivity {
         SharedPreferences mSharedPrefs = getSharedPreferences("credencialesPublicas",Context.MODE_PRIVATE);
         String idusuario = mSharedPrefs.getString("idusuario","");
 
-
-
         listadoActividad(idusuario);
 
 
@@ -117,7 +115,7 @@ public class Progreso_ListadoActividades extends AppCompatActivity {
                 try {
                     JSONArray usuarioArray = response.getJSONArray("actividades");
 
-                    listaActividades.clear();//limpiar la lista de usuario antes de comenzar a listar
+                    listaActividades.clear();
                     for (int i = 0; i < usuarioArray.length(); i++) {
                         JSONObject RowActividad = usuarioArray.getJSONObject(i);
                         Actividad actividad = new Actividad(RowActividad.getString("codigo_actividad"),
@@ -142,7 +140,6 @@ public class Progreso_ListadoActividades extends AppCompatActivity {
                                     finish();
                                 }
                             });
-                    // create alert dialog
                     AlertDialog alertDialog = alertDialogBuilder.create();
                     alertDialog.show();
                 }
@@ -159,10 +156,4 @@ public class Progreso_ListadoActividades extends AppCompatActivity {
         queue.add(jsonObjectRequest);
     }
 
-
-
-
 }
-
-
-

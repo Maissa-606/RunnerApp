@@ -26,7 +26,6 @@ public class SplashScreen extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         decorView.setSystemUiVisibility(uiOptions);
         permisos();
-
 }
 
     private void entrarAnuncios() {

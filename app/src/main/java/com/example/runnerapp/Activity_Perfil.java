@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Activity_Perfil extends AppCompatActivity {
-    //ocultar menu del telefono
+
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);

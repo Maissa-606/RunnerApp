@@ -162,7 +162,7 @@ public class ActivityRegistrar extends AppCompatActivity {
 
         Random random = new Random();
         codigo = random.nextInt(8999) + 1000;
-//        Toast.makeText(getApplicationContext(),"codigo: "+codigo,Toast.LENGTH_SHORT).show();
+
         peso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -182,7 +182,6 @@ public class ActivityRegistrar extends AppCompatActivity {
             public void onClick(View view) {
 
                 validarDatos();
-//                configurar_envio();
 
 
             }
@@ -192,13 +191,12 @@ public class ActivityRegistrar extends AppCompatActivity {
         cmbpais.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                //setComboboxSeleccionado();//obtengo el usuario seleccionado de la lista
+
                 String cadena = adapterView.getSelectedItem().toString();
 
-                //Quitar los caracteres del combobox para obtener solo el codigo del pais
+
                 codigoPaisSeleccionado = Integer.valueOf(extraerNumeros(cadena).toString().replace("]", "").replace("[", ""));
 
-                //Toast.makeText(getApplicationContext(),"usuario id: "+codigoPaisSeleccionado, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -228,10 +226,8 @@ public class ActivityRegistrar extends AppCompatActivity {
             }
         });
 
-        //Inicio de codigo Fecha-------------------------------------------------------------
         mDisplayDate = (TextView) findViewById(R.id.rtxtFechaNacimiento);
 
-        //--------------------------------------------------------
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -260,7 +256,6 @@ public class ActivityRegistrar extends AppCompatActivity {
                 mDisplayDate.setText(date);
             }
         };
-        //---------------------Fin de codigo de la fecha-------------------------------------------
 
     }
 
@@ -313,14 +308,13 @@ public class ActivityRegistrar extends AppCompatActivity {
         }
     }
 
-    //**Entrar a la carpeta de fotos del telefono**//
     private void GaleriaImagenes() {
         Intent intent = new Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/");
         startActivityForResult(intent.createChooser(intent,"Seleccione la aplicacion"),RESULT_GALLERY_IMG);
     }
 
-    //***Metodo para convertir imagen***//
+
     private String GetStringImage(Bitmap photo) {
 
         try {
@@ -356,7 +350,7 @@ public class ActivityRegistrar extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         Uri imageUri;
-        //obtener la iamgen por el almacenamiento interno
+
         if(resultCode==RESULT_OK && requestCode==RESULT_GALLERY_IMG)
         {
 
@@ -370,7 +364,7 @@ public class ActivityRegistrar extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Error al seleccionar imagen", Toast.LENGTH_SHORT).show();
             }
         }
-        //obtener la iamgen por la camara
+
         if(requestCode == TAKE_PIC_REQUEST && resultCode == RESULT_OK)
         {
             Bundle extras = data.getExtras();
@@ -394,34 +388,10 @@ public class ActivityRegistrar extends AppCompatActivity {
     private String validarContrasenia() {
         if (contrasenia1.getText().toString().equals(contrasenia2.getText().toString())){
             contrasenia = contrasenia1.getText().toString();
-            //configurar_envio();
+
             final EditText taskEditText = new EditText(context);
             RegistrarUsuario();
-            /*AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
-            alertDialogBuilder.setTitle("Verifique su correo");
-            alertDialogBuilder
-                    .setMessage("hemos enviado un correo con su codigo de verificación")
-                    .setView(taskEditText)
-                    .setCancelable(true)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    int task = Integer.valueOf(taskEditText.getText().toString());
-                                    if (codigo == task) {
 
-                                        Toast.makeText(getApplicationContext(), "codigo valido", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(getApplicationContext(), "codigo invalido", Toast.LENGTH_SHORT).show();
-                                    }
-
-
-                                }
-                            }
-
-                    );*/
-
-            // create alert dialog
-            //AlertDialog alertDialog = alertDialogBuilder.create();
-            //alertDialog.show();
 
         }
         else {
@@ -443,7 +413,7 @@ public class ActivityRegistrar extends AppCompatActivity {
                             JSONArray contactoArray = jsonObject.getJSONArray( "pais");
 
                             arrayPaises = new ArrayList<>();
-//                            arrayPaises.clear();//limpiar la lista de usuario antes de comenzar a listar
+
                             for (int i=0; i<contactoArray.length(); i++)
                             {
                                 JSONObject RowPais = contactoArray.getJSONObject(i);
@@ -566,22 +536,21 @@ public class ActivityRegistrar extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             try {
-                //Creando objeto MimeMessage
+
                 MimeMessage message = new MimeMessage(session);
-                //Configuracion de la direccion del remitente
+
                 message.setFrom(new InternetAddress("RunnighnHondu@gmail.com"));
-                //Anadimos el receptor
+
                 message.addRecipient(Message.RecipientType.TO,
                         new InternetAddress(para));
                 message.setSubject(asunto);
                 message.setText(mensaje);
 
-                //lo enviamos
+
                 Transport t = session.getTransport("smtp");
                 t.connect("RunnighnHondu@gmail.com","Hondras12.");
                 t.sendMessage(message, message.getAllRecipients());
 
-                //cierre
                 t.close();
 
 
@@ -597,7 +566,6 @@ public class ActivityRegistrar extends AppCompatActivity {
         }
     }
 
-    //------USO DE NUMBERPICKER DE SELECCION DE DATOS. ----------------------------
     private void seleccionarPeso(){
         LayoutInflater inflater = this.getLayoutInflater();
         View item = inflater.inflate(R.layout.pickerpeso, null);

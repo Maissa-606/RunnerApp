@@ -90,8 +90,6 @@ public class ActivityAgregarAmigos extends AppCompatActivity {
         String email = correo;
         listarUsuarios(email);
 
-        //ocultar menu
-
         btnAtras = findViewById(R.id.addAmbtnAtras);
         btnAtras.setOnClickListener(new View.OnClickListener() {
             @Override

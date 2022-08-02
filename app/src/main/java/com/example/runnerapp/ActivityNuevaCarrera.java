@@ -75,8 +75,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
     private ActivityMapsBinding binding;
     final String[] codigo_actividad = new String[1];
 
-
-    //-----tiempo
     private int segundos;
     private boolean running1;
     private boolean wasRunning;
@@ -146,7 +144,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
                             }
 
                             public void onTick(long millisUntilFinished) {
-                                // millisUntilFinished    The amount of time until finished.
                             }
                         }.start();
                         new CountDownTimer(10001, 1000) {
@@ -155,7 +152,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
                             }
 
                             public void onTick(long millisUntilFinished) {
-                                // millisUntilFinished    The amount of time until finished.
                             }
                         }.start();
 
@@ -173,9 +169,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
         } else {
             locationStart();
         }
-        //mando a llamar el metodo ejecutar y cada 10 segundos se encargara de setear la nueva ubicacion
-
-
     }
 
 
@@ -183,17 +176,13 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
 
 
 
-
-
-
-    //-----------------------------LATITUD Y LONGITUD----------------------------------------
     private void locationStart() {
         LocationManager mlocManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         Localizacion Local = new Localizacion();
         Local.setMainActivity(this);
         final boolean gpsEnabled = mlocManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         if (!gpsEnabled) {
-            //SE VA A LA CONFIGURACION DEL SISTEMA PARA QUE ACTIVE EL GPS UNA VEZ QUE INICIA LA APLICACION
+
             Intent settingsIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
             startActivity(settingsIntent);
         }
@@ -206,7 +195,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
 
     }
 
-    //-------------------------GUARDAR RECORRIDO--------------------------
 
     private void guardarRecorrido(String codigoUsuario, Double distancia,String tiempo) {
 
@@ -324,8 +312,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
 
         @Override
         public void onLocationChanged(Location loc) {
-            // Este metodo se ejecuta cada vez que el GPS recibe nuevas coordenadas
-            // debido a la deteccion de un cambio de ubicacion
 
             loc.getLatitude();
             loc.getLongitude();
@@ -354,7 +340,7 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
     }
 
     public void setLocation(Location loc) {
-        //Obtener la direccion de la calle a partir de la latitud y la longitud
+
         if (loc.getLatitude() != 0.0 && loc.getLongitude() != 0.0) {
             try {
                 Geocoder geocoder = new Geocoder(this, Locale.getDefault());
@@ -380,7 +366,6 @@ public class ActivityNuevaCarrera extends AppCompatActivity{
     public static Double getLongitud(){
         return Double.valueOf(longitud);
     }
-
 
 
 }

@@ -119,7 +119,6 @@ public class ActivityClasificacion extends AppCompatActivity {
             if(Integer.toString(enterosKm).length()>6){ kilometro.setText(df.format(km/1000000)+"M"); }
             if(Integer.toString(enterosKc).length()>6){ kcal.setText(df.format(kc/1000000)+"M"); }
 
-            //Fin Conversion
 
             top.setText(listaClasificacion.get(position).getTop());
             nombrecompleto.setText(listaClasificacion.get(position).getNombrecompleto());

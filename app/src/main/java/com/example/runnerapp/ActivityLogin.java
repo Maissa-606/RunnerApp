@@ -43,7 +43,7 @@ public class ActivityLogin extends AppCompatActivity {
                 View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
         );
     }
-    //Button btnIngresar, btnRegistrarse; elimine el casteo y lo puse TextView
+
     TextView btnIngresar, btnRegistrarse;
 
     EditText txtcorreo, txtcontrasenia;
@@ -62,9 +62,6 @@ public class ActivityLogin extends AppCompatActivity {
         txtcorreo = (EditText) findViewById(R.id.altxtUser);
         txtcontrasenia = (EditText) findViewById(R.id.altxtPass);
         Recordar = (CheckBox) findViewById(R.id.alckRecordar);
-
-
-
 
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,23 +83,21 @@ public class ActivityLogin extends AppCompatActivity {
             }
         });
 
-//======================PERSISTENCIA DE DATOS=========================================//
         mSharedPrefs = getSharedPreferences("credenciales",Context.MODE_PRIVATE);
         String user = mSharedPrefs.getString("usuario","");
         String pass = mSharedPrefs.getString("password","");
         txtcorreo.setText(user);
         txtcontrasenia.setText(pass);
-//========CREDENCIALES PUBLICAS PARA LLAMAR EN LAS ACTIVIDADES Y EVITAR QUE LA INFORMACION SE PIERDA====///
+
         mSharedPrefsPublico = getSharedPreferences("credencialesPublicas",Context.MODE_PRIVATE);
         String userPublic = mSharedPrefsPublico.getString("usuarioPublic","");
 
         if (txtcorreo.getText().length() == 0 || txtcontrasenia.getText().length() ==0){
-            //Toast.makeText(getApplicationContext(), "Bienvenido ", Toast.LENGTH_SHORT).show();
+
         }else {
             Recordar.setChecked(true);
             loginUsuario(user, pass);
         }
-
 
     }
 
@@ -143,7 +138,6 @@ public class ActivityLogin extends AppCompatActivity {
                                 editor.commit();
                             }
 
-                            //==============USAR CEDENCIALES PUBLICAMENTE==============///
                             mSharedPrefsPublico = getSharedPreferences("credencialesPublicas",Context.MODE_PRIVATE);
                             SharedPreferences.Editor editorPublico = mSharedPrefsPublico.edit();
                             String userPublic = txtcorreo.getText().toString();
@@ -151,8 +145,6 @@ public class ActivityLogin extends AppCompatActivity {
                             editorPublico.putString("idusuario",codigo );
                             editorPublico.commit();
 
-
-                            //Toast.makeText(getApplicationContext(), "Response " + mensaje, Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(),ActivityTablero.class);
                             intent.putExtra("codigo_usuario", codigo);
                             startActivity(intent);
@@ -169,7 +161,7 @@ public class ActivityLogin extends AppCompatActivity {
                                             dialog.cancel();
                                         }
                                     });
-                            // create alert dialog
+
                             AlertDialog alertDialog = alertDialogBuilder.create();
                             alertDialog.show();
                         }

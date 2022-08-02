@@ -60,7 +60,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
 
     @Override public void onBackPressed() { }
 
-    //Datos para fecha
 
     private static final String TAG = "MainActivity";
     private TextView mDisplayDate;
@@ -104,10 +103,9 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
             }
         });
 
-        //Inicio de codigo Fecha-------------------------------------------------------------
         mDisplayDate = (TextView) findViewById(R.id.actuFechaNac);
 
-        //--------------------------------------------------------
+
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,10 +134,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
                 mDisplayDate.setText(date);
             }
         };
-
-
-
-        //---------------------Fin de codigo de la fecha-------------------------------------------
 
         txtNombre = (EditText) findViewById(R.id.actutxtnombre);
         txtApellido =  (EditText) findViewById(R.id.actutxtapellidos);
@@ -255,19 +249,14 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
 
     }
 
-
-    //--------------------------------metodo actualizar imagen-------------------------------------------------
     private void ActualizarDatos(String correo) {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         HashMap<String, String> parametros = new HashMap<>();
-        //obtiene la foto tomada o seleccionada, luego verifica en un if si la variable
-        // fotoString2 no este vacia ya que en caso que este vacia significa que no se actualiza la foto
         String fotoString2 = GetStringImage(imagen);
         if (fotoString2.equals("")||fotoString2.isEmpty()||fotoString2.equals(null)){
             fotoString2 = fotoString;
         }
 
-        //setear los parametros mediante put
         parametros.put("nombres", txtNombre.getText().toString());
         parametros.put("apellidos", txtApellido.getText().toString());
         parametros.put("fecha_nac", txtFechaNac.getText().toString());
@@ -343,7 +332,6 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
         }
     }
 
-    //**Entrar a la carpeta de fotos del telefono**//
     private void GaleriaImagenes() {
 
         Intent intent = new Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -398,7 +386,7 @@ public class Activity_Actualizar_Perfil extends AppCompatActivity {
         });
         queue.add(stringRequest);
     }
-    //------USO DE NUMBERPICKER DE SELECCION DE DATOS. ----------------------------
+
     private void seleccionarPeso(){
         LayoutInflater inflater = this.getLayoutInflater();
         View item = inflater.inflate(R.layout.pickerpeso, null);
