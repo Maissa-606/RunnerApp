@@ -38,41 +38,41 @@
                 android:id="@+id/cNombreCompleto"
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
-                android:text="Esteban Ariel Cerrato Pavon"
-                android:minWidth="155dp"
-                android:maxWidth="155dp"
-                android:textSize="15sp"
-                android:textColor="@color/black"
                 android:fontFamily="@font/ptsans_regular"
-                android:gravity="center_vertical"/>
+                android:gravity="center_vertical"
+                android:maxWidth="155dp"
+                android:minWidth="155dp"
+                android:text="Grupo 3_UTH"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/ckilometro"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:minWidth="60dp"
-                android:maxWidth="60dp"
-                android:paddingHorizontal="5dp"
-                android:text="300.00k"
-                android:textSize="13sp"
-                android:textColor="@color/black"
                 android:fontFamily="@font/ptsans_regular"
                 android:gravity="center_vertical"
-                android:textAlignment="textEnd"/>
+                android:maxWidth="60dp"
+                android:minWidth="60dp"
+                android:paddingHorizontal="5dp"
+                android:text="250.00k"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
 
             <TextView
                 android:id="@+id/cKcal"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:minWidth="60dp"
-                android:maxWidth="60dp"
-                android:text="120.00K"
-                android:textSize="13sp"
-                android:textColor="@color/black"
-                android:paddingEnd="5dp"
                 android:fontFamily="@font/ptsans_regular"
                 android:gravity="center_vertical"
-                android:textAlignment="textEnd"/>
+                android:maxWidth="60dp"
+                android:minWidth="60dp"
+                android:paddingEnd="5dp"
+                android:text="100.00K"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
         </TableRow>
 
     </TableLayout>
