@@ -17,10 +17,10 @@
             android:layout_height="match_parent">
 
             <RelativeLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tablerbtnVerProgreso"
@@ -34,17 +34,18 @@
 
                 <TextView
                     android:id="@+id/texto1"
-                    android:layout_width="209dp"
+                    android:layout_width="138dp"
                     android:layout_height="47dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="37dp"
+                    android:layout_marginStart="131dp"
                     android:layout_marginTop="330dp"
-                    android:layout_marginEnd="164dp"
+                    android:layout_marginEnd="142dp"
 
-                    android:fontFamily="@font/ptsans_regular"
-                    android:text="PROGRESO"
+                    android:background="#950bde"
+                    android:fontFamily="@font/oceanwidesemibold"
+                    android:text="Progreso"
                     android:textAlignment="viewStart"
                     android:textColor="@color/white"
                     android:textSize="24dp" />
@@ -95,48 +96,51 @@
 
                 <TextView
                     android:id="@+id/texto2"
-                    android:layout_width="209dp"
-                    android:layout_height="47dp"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="37dp"
+                    android:layout_marginStart="116dp"
                     android:layout_marginTop="470dp"
-                    android:layout_marginEnd="164dp"
-                    android:fontFamily="@font/ptsans_regular"
-                    android:text="ESTADÍSTICAS"
+                    android:layout_marginEnd="142dp"
+                    android:background="#950bde"
+                    android:fontFamily="@font/oceanwidesemibold"
+                    android:text="Estadísticas"
                     android:textAlignment="viewStart"
                     android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:id="@+id/texto3"
-                    android:layout_width="209dp"
-                    android:layout_height="47dp"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="41dp"
+                    android:layout_marginStart="107dp"
                     android:layout_marginTop="596dp"
-                    android:layout_marginEnd="160dp"
-                    android:fontFamily="@font/ptsans_regular"
-                    android:text="CLASIFICACIÓN"
+                    android:layout_marginEnd="129dp"
+                    android:background="#950bde"
+                    android:fontFamily="@font/oceanwidesemibold"
+                    android:text="Clasificación"
                     android:textAlignment="viewStart"
                     android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:id="@+id/texto4"
-                    android:layout_width="150dp"
+                    android:layout_width="133dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="48dp"
+                    android:layout_marginStart="118dp"
                     android:layout_marginTop="208dp"
-                    android:layout_marginEnd="213dp"
-                    android:fontFamily="@font/ptsans_regular"
-                    android:text="CORREDORES"
+                    android:layout_marginEnd="160dp"
+                    android:background="#950bde"
+                    android:fontFamily="@font/oceanwidesemibold"
+                    android:text="Corredores"
                     android:textAlignment="viewStart"
                     android:textColor="@color/white"
                     android:textSize="24dp" />
@@ -157,6 +161,14 @@
                         app:srcCompat="@drawable/runnerapplogo" />
 
                     <ImageView
+                        android:id="@+id/perfil"
+                        android:layout_width="13dp"
+                        android:layout_height="73dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/usuarioperfil" />
+
+                    <ImageView
                         android:id="@+id/tabCerrarSesion"
                         android:layout_width="17dp"
                         android:layout_height="68dp"
@@ -164,13 +176,6 @@
                         android:layout_weight="1"
                         app:srcCompat="@drawable/cerrar_sesion" />
 
-                    <ImageView
-                        android:id="@+id/perfil"
-                        android:layout_width="13dp"
-                        android:layout_height="63dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/usuarioperfil" />
 
                 </LinearLayout>
 
@@ -223,7 +228,7 @@
                     android:layout_marginStart="265dp"
                     android:layout_marginTop="193dp"
                     android:layout_marginEnd="65dp"
-                    app:srcCompat="@drawable/grupousuarios" />
+                    app:srcCompat="@drawable/people" />
 
             </RelativeLayout>
         </ScrollView>

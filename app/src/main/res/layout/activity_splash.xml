@@ -2,33 +2,48 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@drawable/fondo0">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="266dp"
-        android:layout_height="349dp"
+        android:layout_width="340dp"
+        android:layout_height="581dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="143dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="238dp"
-        app:srcCompat="@drawable/runnerapplogo" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="279dp"
+        app:srcCompat="@drawable/logoapp" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/abtnnext"
-        android:layout_width="127dp"
-        android:layout_height="108dp"
+        android:layout_width="20dp"
+        android:layout_height="28dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="415dp"
+        android:layout_marginTop="495dp"
         android:layout_marginEnd="4dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
         app:lottie_rawRes="@raw/location" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="53dp"
+        android:fontFamily="@font/ptsans_bold"
+        android:text="©Grupo 3 | Programación Móvil I"
+        android:textSize="18sp" />
 
 </RelativeLayout>

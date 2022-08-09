@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg_color"
+    android:background="@drawable/back01"
+
     android:layout_height="match_parent">
 
     <ScrollView
@@ -23,25 +24,25 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="68dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="19dp"
                 android:layout_marginEnd="65dp"
                 app:srcCompat="@drawable/logoapp" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="339dp"
-                android:layout_height="wrap_content"/>/*
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="202dp"
-                android:layout_marginEnd="36dp"
-                android:fontFamily="@font/oceanwidesemibold"
-                android:text="Running HN"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="50dp" />*/
+                android:layout_height="wrap_content" />/*
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="202dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/oceanwidesemibold"
+            android:text="Running HN"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50dp" />*/
 
             <EditText
                 android:id="@+id/altxtPass"
@@ -54,14 +55,14 @@
                 android:layout_marginTop="427dp"
                 android:layout_marginEnd="30dp"
                 android:backgroundTint="#0d4c6e"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/teal_200"
-                android:textColorHint="#058b93"
                 android:ems="10"
                 android:fontFamily="@font/ptsans_regular"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_200"
+                android:textColorHint="#058b93"
                 android:textSize="20dp" />
 
             <EditText
@@ -109,7 +110,7 @@
                 android:layout_marginEnd="65dp"
                 android:fontFamily="@font/oceanwidesemibold"
                 android:gravity="center"
-                android:text="Iniciar Sesión"
+                android:text="Ingresar"
                 android:textColor="@color/white"
                 android:textSize="24dp" />
 
@@ -157,8 +158,6 @@
                 android:layout_marginTop="475dp"
                 android:layout_marginEnd="38dp"
                 android:orientation="horizontal">
-
-
 
 
             </LinearLayout>

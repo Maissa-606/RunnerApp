@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/fondo2"
     tools:context=".ActivityEstadisticas">
 
     <ScrollView
@@ -14,7 +14,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:fontFamily="@font/oceanwidesemibold"
                     android:gravity="center"
                     android:text="Atrás |"
@@ -37,6 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="6"
+                    android:background="@android:color/transparent"
                     android:fontFamily="@font/oceanwidesemibold"
                     android:gravity="center"
                     android:text="ESTADÍSTICAS"
@@ -46,7 +49,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"></LinearLayout>
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"></LinearLayout>
 
 
             </LinearLayout>
@@ -57,19 +61,21 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="50dp"
                 android:layout_weight="3"
+                android:background="@android:color/transparent"
                 android:padding="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#FAFAFA"
+                    android:background="@android:color/transparent"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -78,8 +84,7 @@
                             android:fontFamily="@font/oceanwidesemibold"
                             android:text="Km Recorridos este Mes"
                             android:textColor="@color/black"
-                            android:textSize="20dp">
-                        </TextView>
+                            android:textSize="20dp"></TextView>
 
                         <TextView
                             android:id="@+id/TextViewRecorridoMes"
@@ -95,11 +100,6 @@
                         </TextView>
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:src="@drawable/run"></ImageView>
                 </LinearLayout>
             </LinearLayout>
 
@@ -110,18 +110,20 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="175dp"
                 android:layout_weight="3"
+                android:background="@android:color/transparent"
                 android:padding="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#FAFAFA"
+                    android:background="@android:color/transparent"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="415dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:background="@android:color/transparent"
                         android:orientation="vertical">
 
                         <TextView
@@ -146,11 +148,6 @@
                         </TextView>
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:src="@drawable/calorias"></ImageView>
                 </LinearLayout>
             </LinearLayout>
 
@@ -166,24 +163,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#FAFAFA"
+                    android:background="#55555555"
                     android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#9306de"
-                        android:fontFamily="@font/oceanwidesemibold"
-                        android:text="Histórico"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"></TextView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:orientation="vertical"
-                        android:layout_marginTop="25dp">
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -213,15 +200,17 @@
                         </LinearLayout>
 
                         <LinearLayout
+
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:weightSum="2"
-                            android:background="@color/browser_actions_bg_grey">
+                            android:background="@android:color/transparent"
+                            android:weightSum="2">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:background="@android:color/transparent"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -250,6 +239,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:background="@android:color/transparent"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -286,41 +276,15 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="25dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="10dp"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/ptsans_bold"
-                                android:gravity="center"
-                                android:text="Mes Anterior"
-                                android:textColor="@color/black"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="10dp"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/ptsans_bold"
-                                android:gravity="center"
-                                android:text="Mes Actual"
-                                android:textColor="@color/black"
-                                android:textSize="16dp"></TextView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:weightSum="2"
-                            android:background="@color/browser_actions_bg_grey">
+                            android:background="@android:color/transparent"
+                            android:weightSum="2">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:background="@android:color/transparent"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -349,6 +313,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:background="@android:color/transparent"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -373,10 +338,36 @@
                             </LinearLayout>
                         </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/ptsans_bold"
+                                android:gravity="center"
+                                android:text="Mes Anterior"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/ptsans_bold"
+                                android:gravity="center"
+                                android:text="Mes Actual"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"></TextView>
+                        </LinearLayout>
+
 
                     </LinearLayout>
                     MESES FINAL
-
 
 
                 </LinearLayout>
