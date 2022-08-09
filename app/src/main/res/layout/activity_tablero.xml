@@ -130,14 +130,14 @@
 
                 <TextView
                     android:id="@+id/texto4"
-                    android:layout_width="133dp"
+                    android:layout_width="166dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="118dp"
+                    android:layout_marginStart="99dp"
                     android:layout_marginTop="208dp"
-                    android:layout_marginEnd="160dp"
+                    android:layout_marginEnd="146dp"
                     android:background="#950bde"
                     android:fontFamily="@font/oceanwidesemibold"
                     android:text="Corredores"
