@@ -127,7 +127,7 @@ public class recuperar extends Activity {
     }
     public void configurar_envio(){
         para = destinatario.getText().toString();
-        asunto = "Recuperacion de contraseña - RUNNING HN";
+        asunto = "Recuperacion de contraseña";
         mensaje = "Hola "+nombrecompleto+", \n"+"Su usuario es: "+usuario+"\n"+ "Su contraseña es: "+password;
 
          Properties properties = new Properties ();
@@ -136,14 +136,14 @@ public class recuperar extends Activity {
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.port", "25");
-        properties.put("mail.smtp.user", "RunnighnHondu@gmail.com");
+        properties.put("mail.smtp.user", "runnerapp@gmail.com");
         properties.put("mail.smtp.auth", "true");
 
 
         session = Session.getDefaultInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("RunnighnHondu@gmail.com", "Hondras12.");
+                return new PasswordAuthentication("runnerapp@gmail.com", "Hondras12.");
             }
         });
         session.setDebug(true);
@@ -163,14 +163,14 @@ public class recuperar extends Activity {
         protected String doInBackground(String... strings) {
             try {
                 MimeMessage message = new MimeMessage(session);
-                message.setFrom(new InternetAddress("RunnighnHondu@gmail.com"));
+                message.setFrom(new InternetAddress("runnerapp@gmail.com"));
                 message.addRecipient(Message.RecipientType.TO,
                         new InternetAddress(para));
                 message.setSubject(asunto);
                 message.setText(mensaje);
 
                 Transport t = session.getTransport("smtp");
-                t.connect("RunnighnHondu@gmail.com","Hondras12.");
+                t.connect("runnerapp@gmail.com","Hondras12.");
                 t.sendMessage(message, message.getAllRecipients());
 
                 t.close();
